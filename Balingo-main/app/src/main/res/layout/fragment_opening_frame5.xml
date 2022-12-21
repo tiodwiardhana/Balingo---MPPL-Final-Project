@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:outlineProvider="none"
+    tools:context=".ui.opening.OpeningFrame5Fragment"
+    tools:ignore="ContentDescription">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/upper_frame5" />
+
+        <com.google.android.material.button.MaterialButtonToggleGroup
+            android:orientation="vertical"
+            android:layout_marginTop="30dp"
+            app:cornerRadius="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_bljr1"
+                app:rippleColor="@color/white"
+                style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/hind"
+                android:letterSpacing="0"
+                android:text="@string/pahamsatu"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#FFF5F1"
+                app:cornerRadius="15dp"
+                app:iconPadding="10dp"
+                app:icon="@drawable/levels0"
+                app:iconTintMode="multiply"
+                app:strokeColor="@color/white"
+                app:strokeWidth="1dp" />
+
+            <com.google.android.material.button.MaterialButton
+                app:cornerRadius="15dp"
+                app:rippleColor="@color/white"
+                android:id="@+id/btn_bljr2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                app:iconTint="@color/cardview_light_background"
+                android:text="@string/pahamdua"
+                android:textAlignment="textStart"
+                android:textColor="#FFF5F1"
+                android:fontFamily="@font/hind"
+                android:textSize="14sp"
+                android:textAllCaps="false"
+                android:letterSpacing="0"
+                app:icon="@drawable/levels1"
+                app:iconTintMode="multiply"
+                app:iconPadding="10dp"
+                app:strokeColor="@color/white"
+                app:strokeWidth="1dp" />
+
+            <com.google.android.material.button.MaterialButton
+                app:cornerRadius="15dp"
+                app:rippleColor="@color/white"
+                android:id="@+id/btn_bljr3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                app:iconTint="@color/cardview_light_background"
+                android:text="@string/pahamtiga"
+                android:textAlignment="textStart"
+                android:textColor="#FFF5F1"
+                android:fontFamily="@font/hind"
+                android:textSize="14sp"
+                android:textAllCaps="false"
+                android:letterSpacing="0"
+                app:icon="@drawable/levels2"
+                app:iconTintMode="multiply"
+                app:iconPadding="10dp"
+                app:strokeColor="@color/white"
+                app:strokeWidth="1dp" />
+
+            <com.google.android.material.button.MaterialButton
+                app:cornerRadius="15dp"
+                app:rippleColor="@color/white"
+                android:id="@+id/btn_bljr4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                app:iconTint="@color/cardview_light_background"
+                android:text="@string/pahamempat"
+                android:textAlignment="textStart"
+                android:textColor="#FFF5F1"
+                android:fontFamily="@font/hind"
+                android:textSize="14sp"
+                android:textAllCaps="false"
+                android:letterSpacing="0"
+                app:icon="@drawable/levels3"
+                app:iconTintMode="multiply"
+                app:iconPadding="10dp"
+                app:strokeColor="@color/white"
+                app:strokeWidth="1dp" />
+        </com.google.android.material.button.MaterialButtonToggleGroup>
+
+        <com.google.android.material.button.MaterialButton
+            android:text="@string/lanjutkan"
+            android:textSize="16sp"
+            android:textColor="@color/main_dark"
+            app:cornerRadius="15dp"
+            android:fontFamily="@font/khula_bold"
+            android:backgroundTint="@color/white"
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="120dp" />
+
+    </LinearLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:outlineProvider="none"
+    tools:context=".ui.opening.OpeningFrame7Fragment"
+    tools:ignore="ContentDescription">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/upper_frame7"
+            tools:ignore="ImageContrastCheck" />
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <com.google.android.material.button.MaterialButton
+                app:rippleColor="@color/white"
+                style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                android:id="@+id/btnTigaMnt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/hind"
+                android:textSize="14sp"
+                android:textAlignment="center"
+                android:text="@string/tigamnt"
+                android:textAllCaps="false"
+                android:textColor="#FFF5F1"
+                app:cornerRadius="15dp"
+                app:strokeColor="@color/white"
+                app:strokeWidth="1dp" />
+
+            <com.google.android.material.button.MaterialButton
+                app:rippleColor="@color/white"
+                android:id="@+id/btnSepuluhMnt"
+                style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/hind"
+                android:textSize="14sp"
+                android:text="@string/sepuluhmnt"
+                android:textAllCaps="false"
+                android:textColor="#FFF5F1"
+                app:cornerRadius="15dp"
+                app:strokeColor="@color/white"
+                app:strokeWidth="1dp" />
+
+            <com.google.android.material.button.MaterialButton
+                app:rippleColor="@color/white"
+                android:id="@+id/btnLimaBelasMnt"
+                style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/hind"
+                android:textSize="14sp"
+                android:text="@string/limaBelasmnt"
+                android:textAllCaps="false"
+                android:textColor="#FFF5F1"
+                app:cornerRadius="15dp"
+                app:strokeColor="@color/white"
+                app:strokeWidth="1dp" />
+
+            <com.google.android.material.button.MaterialButton
+                app:rippleColor="@color/white"
+                android:id="@+id/btnTigaPuluhMnt"
+                style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/hind"
+                android:textSize="14sp"
+                android:text="@string/tigaPuluhmnt"
+                android:textAllCaps="false"
+                android:textColor="#FFF5F1"
+                app:cornerRadius="15dp"
+                app:strokeColor="@color/white"
+                app:strokeWidth="1dp" />
+
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:text="@string/lanjutkan"
+            android:textSize="16sp"
+            android:textColor="@color/main_dark"
+            app:cornerRadius="15dp"
+            android:fontFamily="@font/khula_bold"
+            android:backgroundTint="@color/white"
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="240dp" />
+    </LinearLayout>
+
+
+</FrameLayout>

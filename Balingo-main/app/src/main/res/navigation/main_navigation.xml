@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/openingFrame1Fragment">
+
+    <fragment
+        android:id="@+id/openingFrame1Fragment"
+        android:name="com.example.balingo.ui.opening.OpeningFrame1Fragment"
+        android:label="fragment_opening_frame1"
+        tools:layout="@layout/fragment_opening_frame1" >
+        <action
+            android:id="@+id/action_openingFrame1Fragment_to_openingFrame2Fragment"
+            app:destination="@id/openingFrame2Fragment" />
+        <action
+            android:id="@+id/action_openingFrame1Fragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/openingFrame2Fragment"
+        android:name="com.example.balingo.ui.opening.OpeningFrame2Fragment"
+        android:label="fragment_opening_frame2"
+        tools:layout="@layout/fragment_opening_frame2" >
+        <action
+            android:id="@+id/action_openingFrame2Fragment_to_openingFrame3Fragment"
+            app:destination="@id/openingFrame3Fragment" />
+        <action
+            android:id="@+id/action_openingFrame2Fragment_to_openingFrame1Fragment"
+            app:destination="@id/openingFrame1Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/openingFrame3Fragment"
+        android:name="com.example.balingo.ui.opening.OpeningFrame3Fragment"
+        android:label="fragment_opening_frame3"
+        tools:layout="@layout/fragment_opening_frame3" >
+        <action
+            android:id="@+id/action_openingFrame3Fragment_to_openingFrame4Fragment"
+            app:destination="@id/openingFrame4Fragment" />
+        <action
+            android:id="@+id/action_openingFrame3Fragment_to_openingFrame2Fragment"
+            app:destination="@id/openingFrame2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/openingFrame4Fragment"
+        android:name="com.example.balingo.ui.opening.OpeningFrame4Fragment"
+        android:label="fragment_opening_frame4"
+        tools:layout="@layout/fragment_opening_frame4" >
+        <action
+            android:id="@+id/action_openingFrame4Fragment_to_openingFrame5Fragment"
+            app:destination="@id/openingFrame5Fragment" />
+        <action
+            android:id="@+id/action_openingFrame4Fragment_to_openingFrame8Fragment"
+            app:destination="@id/openingFrame8Fragment" />
+        <argument
+            android:name="soalArgs"
+            app:argType="integer"
+            android:defaultValue="0"/>
+    </fragment>
+    <fragment
+        android:id="@+id/openingFrame5Fragment"
+        android:name="com.example.balingo.ui.opening.OpeningFrame5Fragment"
+        android:label="fragment_opening_frame5"
+        tools:layout="@layout/fragment_opening_frame5" >
+        <action
+            android:id="@+id/action_openingFrame5Fragment_to_openingFrame7Fragment"
+            app:destination="@id/openingFrame7Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/openingFrame7Fragment"
+        android:name="com.example.balingo.ui.opening.OpeningFrame7Fragment"
+        android:label="fragment_opening_frame7"
+        tools:layout="@layout/fragment_opening_frame7" >
+        <action
+            android:id="@+id/action_openingFrame7Fragment_to_openingFrame8Fragment"
+            app:destination="@id/openingFrame8Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/openingFrame8Fragment"
+        android:name="com.example.balingo.ui.opening.OpeningFrame8Fragment"
+        android:label="fragment_opening_frame8"
+        tools:layout="@layout/fragment_opening_frame8" >
+        <action
+            android:id="@+id/action_openingFrame8Fragment_to_landingFragment"
+            app:destination="@id/landingFragment" />
+        <action
+            android:id="@+id/action_openingFrame8Fragment_to_gameFrame1Fragment"
+            app:destination="@id/gameFrame1Fragment" />
+        <argument
+            android:name="soalArgs"
+            app:argType="integer"
+            android:defaultValue="0"/>
+    </fragment>
+    <fragment
+        android:id="@+id/landingFragment"
+        android:name="com.example.balingo.ui.opening.LandingFragment"
+        android:label="fragment_landing"
+        tools:layout="@layout/fragment_landing" >
+        <action
+            android:id="@+id/action_landingFragment_to_gameFrame1Fragment"
+            app:destination="@id/gameFrame1Fragment" />
+        <action
+            android:id="@+id/action_landingFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameFrame1Fragment"
+        android:name="com.example.balingo.ui.game1.GameFrame1Fragment"
+        android:label="fragment_game_frame1"
+        tools:layout="@layout/fragment_game_frame1" >
+        <action
+            android:id="@+id/action_gameFrame1Fragment_to_gameFrame2Fragment"
+            app:destination="@id/gameFrame2Fragment" />
+        <action
+            android:id="@+id/action_gameFrame1Fragment_to_trueFragment2"
+            app:destination="@id/trueFragment" />
+        <action
+            android:id="@+id/action_gameFrame1Fragment_to_falseFragment"
+            app:destination="@id/falseFragment" />
+        <argument
+            android:name="soalArgs"
+            app:argType="integer"
+            android:defaultValue="0"/>
+    </fragment>
+    <fragment
+        android:id="@+id/gameFrame2Fragment"
+        android:name="com.example.balingo.ui.game2.GameFrame2Fragment"
+        android:label="fragment_game_frame2"
+        tools:layout="@layout/fragment_game_frame2" >
+        <argument
+            android:name="soalArgs"
+            app:argType="integer"
+            android:defaultValue="0"/>
+        <action
+            android:id="@+id/action_gameFrame2Fragment_to_trueGame2Fragment"
+            app:destination="@id/trueGame2Fragment" />
+        <action
+            android:id="@+id/action_gameFrame2Fragment_to_falseGame2Fragment"
+            app:destination="@id/falseGame2Fragment" />
+        <action
+            android:id="@+id/action_gameFrame2Fragment_to_gameFrame3Fragment"
+            app:destination="@id/gameFrame3Fragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/trueFragment"
+        android:name="com.example.balingo.ui.game1.TrueFragment"
+        android:label="fragment_true"
+        tools:layout="@layout/fragment_true" >
+        <argument
+            android:name="soalArgs"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_trueFragment_to_gameFrame1Fragment"
+            app:destination="@id/gameFrame1Fragment" />
+    </dialog>
+    <dialog
+        android:id="@+id/falseFragment"
+        android:name="com.example.balingo.ui.game1.FalseFragment"
+        android:label="fragment_false"
+        tools:layout="@layout/fragment_false" >
+        <argument
+            android:name="myArg"
+            app:argType="string" />
+        <argument
+            android:name="soalArgs"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_falseFragment_to_gameFrame1Fragment"
+            app:destination="@id/gameFrame1Fragment" />
+    </dialog>
+    <dialog
+        android:id="@+id/trueGame2Fragment"
+        android:name="com.example.balingo.ui.game2.TrueGame2Fragment"
+        android:label="fragment_true_game2"
+        tools:layout="@layout/fragment_true_game2" >
+        <argument
+            android:name="soalArgs"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_trueGame2Fragment_to_gameFrame2Fragment"
+            app:destination="@id/gameFrame2Fragment" />
+    </dialog>
+    <dialog
+        android:id="@+id/falseGame2Fragment"
+        android:name="com.example.balingo.ui.game2.FalseGame2Fragment"
+        android:label="fragment_false_game2"
+        tools:layout="@layout/fragment_false_game2" >
+        <argument
+            android:name="myArg"
+            app:argType="string" />
+        <argument
+            android:name="soalArgs"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_falseGame2Fragment_to_gameFrame2Fragment"
+            app:destination="@id/gameFrame2Fragment" />
+    </dialog>
+    <fragment
+        android:id="@+id/gameFrame3Fragment"
+        android:name="com.example.balingo.ui.game3.GameFrame3Fragment"
+        android:label="fragment_game_frame3"
+        tools:layout="@layout/fragment_game_frame3" >
+        <action
+            android:id="@+id/action_gameFrame3Fragment_to_pelajaranSelesaiFragment"
+            app:destination="@id/pelajaranSelesaiFragment" />
+        <action
+            android:id="@+id/action_gameFrame3Fragment_to_trueGame3Fragment"
+            app:destination="@id/trueGame3Fragment" />
+        <action
+            android:id="@+id/action_gameFrame3Fragment_to_falseGame3Fragment"
+            app:destination="@id/falseGame3Fragment" />
+        <argument
+            android:name="soalArgs"
+            app:argType="integer"
+            android:defaultValue="0"/>
+    </fragment>
+    <fragment
+        android:id="@+id/pelajaranSelesaiFragment"
+        android:name="com.example.balingo.ui.PelajaranSelesaiFragment"
+        android:label="fragment_pelajaran_selesai"
+        tools:layout="@layout/fragment_pelajaran_selesai" >
+        <action
+            android:id="@+id/action_pelajaranSelesaiFragment_to_mapFrameFragment"
+            app:destination="@id/mapFrameFragment" />
+        <argument
+            android:name="mapArgs"
+            app:argType="integer" />
+    </fragment>
+    <dialog
+        android:id="@+id/trueGame3Fragment"
+        android:name="com.example.balingo.ui.game3.TrueGame3Fragment"
+        android:label="fragment_true_game3"
+        tools:layout="@layout/fragment_true_game3" >
+        <action
+            android:id="@+id/action_trueGame3Fragment_to_gameFrame3Fragment"
+            app:destination="@id/gameFrame3Fragment" />
+        <argument
+            android:name="soalArgs"
+            app:argType="integer" />
+    </dialog>
+    <dialog
+        android:id="@+id/falseGame3Fragment"
+        android:name="com.example.balingo.ui.game3.FalseGame3Fragment"
+        android:label="fragment_false_game3"
+        tools:layout="@layout/fragment_false_game3" >
+        <action
+            android:id="@+id/action_falseGame3Fragment_to_gameFrame3Fragment"
+            app:destination="@id/gameFrame3Fragment" />
+        <argument
+            android:name="myArg"
+            app:argType="string" />
+        <argument
+            android:name="soalArgs"
+            app:argType="integer" />
+    </dialog>
+    <fragment
+        android:id="@+id/aboutUsFragment"
+        android:name="com.example.balingo.ui.setting.AboutUsFragment"
+        android:label="fragment_about_us"
+        tools:layout="@layout/fragment_about_us" >
+        <action
+            android:id="@+id/action_aboutUsFragment_to_settingsFragment2"
+            app:destination="@id/settingsFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/kontrolFragment"
+        android:name="com.example.balingo.ui.setting.KontrolFragment"
+        android:label="fragment_kontrol"
+        tools:layout="@layout/fragment_kontrol" >
+        <action
+            android:id="@+id/action_kontrolFragment_to_settingsFragment2"
+            app:destination="@id/settingsFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/SKFragment"
+        android:name="com.example.balingo.ui.setting.SKFragment"
+        android:label="fragment_s_k"
+        tools:layout="@layout/fragment_s_k" >
+        <action
+            android:id="@+id/action_SKFragment_to_settingsFragment2"
+            app:destination="@id/settingsFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment2"
+        android:name="com.example.balingo.ui.setting.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_settingsFragment2_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_settingsFragment2_to_aboutUsFragment"
+            app:destination="@id/aboutUsFragment" />
+        <action
+            android:id="@+id/action_settingsFragment2_to_kontrolFragment"
+            app:destination="@id/kontrolFragment" />
+        <action
+            android:id="@+id/action_settingsFragment2_to_SKFragment"
+            app:destination="@id/SKFragment" />
+        <action
+            android:id="@+id/action_settingsFragment2_to_landingFragment"
+            app:destination="@id/landingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.balingo.ui.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_settingsFragment2"
+            app:destination="@id/settingsFragment2" />
+        <action
+            android:id="@+id/action_profileFragment_to_mapFrameFragment"
+            app:destination="@id/mapFrameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapFrameFragment"
+        android:name="com.example.balingo.ui.MapFrameFragment"
+        android:label="fragment_map_frame"
+        tools:layout="@layout/fragment_map_frame" >
+        <action
+            android:id="@+id/action_mapFrameFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_mapFrameFragment_to_openingFrame4Fragment"
+            app:destination="@id/openingFrame4Fragment" />
+        <argument
+            android:name="mapArgs"
+            app:argType="integer" />
+    </fragment>
+</navigation>

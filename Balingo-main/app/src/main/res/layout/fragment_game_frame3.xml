@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background"
+    tools:context=".ui.game3.GameFrame3Fragment"
+    tools:ignore="ContentDescription">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:src="@drawable/ic_baseline_close_24"
+                android:backgroundTint="#00FFFFFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <ImageButton
+                android:layout_gravity="center"
+                android:src="@drawable/progress_bar"
+                android:backgroundTint="#00FFFFFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:src="@drawable/new_world_icon"
+                android:backgroundTint="#00FFFFFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:layout_gravity="center"
+                android:textColor="#77FFDE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/hind_bold"
+                android:text="@string/kosakata"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/khula_bold"
+            android:text="@string/susun"
+            android:textSize="16sp"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/imgBahasa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/talk_bale"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:visibility="invisible"
+            android:layout_gravity="center"
+            style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+            android:id="@+id/answer"
+            android:layout_marginTop="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:fontFamily="@font/khula_bold"
+            android:textSize="16sp"
+            app:rippleColor="@color/white"
+            android:text="@string/txt1game3"
+            android:textColor="#744504"
+            android:backgroundTint="@color/white"
+            app:cornerRadius="15dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:src="@drawable/dotted"
+            android:layerType="software" />
+
+        <LinearLayout
+            android:layout_marginTop="40dp"
+            android:padding="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                android:id="@+id/answer1"
+                android:layout_marginEnd="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:fontFamily="@font/khula_bold"
+                android:textSize="16sp"
+                app:rippleColor="@color/white"
+                android:text="@string/txt1game3"
+                android:textColor="#FFF5F1"
+                android:backgroundTint="@color/secondary_light"
+                app:cornerRadius="15dp" />
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                android:id="@+id/answer2"
+                android:layout_marginEnd="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:fontFamily="@font/khula_bold"
+                android:textSize="16sp"
+                app:rippleColor="@color/white"
+                android:text="@string/txt2game3"
+                android:textColor="#FFF5F1"
+                android:backgroundTint="@color/secondary_light"
+                app:cornerRadius="15dp" />
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                android:id="@+id/answer3"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:fontFamily="@font/khula_bold"
+                android:textSize="16sp"
+                app:rippleColor="@color/white"
+                android:text="@string/txt3game3"
+                android:textColor="#FFF5F1"
+                android:backgroundTint="@color/secondary_light"
+                app:cornerRadius="15dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                android:id="@+id/answer4"
+                android:layout_marginEnd="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:fontFamily="@font/khula_bold"
+                android:textSize="14sp"
+                app:rippleColor="@color/white"
+                android:text="@string/txt4game3"
+                android:textColor="#FFF5F1"
+                android:backgroundTint="@color/secondary_light"
+                app:cornerRadius="15dp" />
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                android:id="@+id/answer5"
+                android:layout_marginEnd="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:fontFamily="@font/khula_bold"
+                android:textSize="14sp"
+                app:rippleColor="@color/white"
+                android:text="@string/txt5game3"
+                android:textColor="#FFF5F1"
+                android:backgroundTint="@color/secondary_light"
+                app:cornerRadius="15dp" />
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                android:id="@+id/answer6"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:fontFamily="@font/khula_bold"
+                android:textSize="14sp"
+                app:rippleColor="@color/white"
+                android:text="@string/txt6game3"
+                android:textColor="#FFF5F1"
+                android:backgroundTint="@color/secondary_light"
+                app:cornerRadius="15dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:visibility="gone"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/btn_benar"
+        android:layout_marginTop="620dp"
+        app:cornerRadius="8dp"
+        android:text="@string/luarbiasa"
+        android:fontFamily="@font/khula_bold"
+        android:textSize="16sp"
+        android:letterSpacing="0"
+        android:textColor="@color/secondary_dark"
+        android:backgroundTint="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/btn_periksa"
+        android:layout_marginTop="670dp"
+        app:cornerRadius="8dp"
+        android:text="@string/periksa"
+        android:fontFamily="@font/khula_bold"
+        android:textSize="16sp"
+        android:letterSpacing="0"
+        android:textColor="@color/secondary_dark"
+        android:backgroundTint="#6DFF85"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"/>
+
+    <Button
+        android:visibility="gone"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/btn_lanjut"
+        android:layout_marginTop="670dp"
+        app:cornerRadius="8dp"
+        android:text="@string/lanjut"
+        android:fontFamily="@font/khula_bold"
+        android:textSize="16sp"
+        android:letterSpacing="0"
+        android:textColor="@color/secondary_dark"
+        android:backgroundTint="#6DFF85"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"/>
+
+
+
+</FrameLayout>

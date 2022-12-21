@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background"
+    tools:context=".ui.game1.GameFrame1Fragment"
+    tools:ignore="ContentDescription">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:src="@drawable/ic_baseline_close_24"
+                android:backgroundTint="#00FFFFFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <ImageButton
+                android:layout_gravity="center"
+                android:src="@drawable/progress_bar"
+                android:backgroundTint="#00FFFFFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="-15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:src="@drawable/new_world_icon"
+                android:backgroundTint="#00FFFFFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:layout_gravity="center"
+                android:textColor="#77FFDE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/hind_bold"
+                android:text="@string/kosakata"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/khula_bold"
+            android:text="@string/pilihgambar"
+            android:textSize="16sp"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/audio"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/sound_icon"
+                android:background="#00FFFFFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:letterSpacing="0.1"
+                android:id="@+id/tv_bahasa"
+                android:text="@string/tvBahasa"
+                android:textSize="18sp"
+                android:fontFamily="@font/hind"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cv1"
+                style="@style/Widget.Material3.CardView.Filled"
+                app:strokeColor="#D29F69"
+                app:strokeWidth="1dp"
+                android:layout_width="155dp"
+                app:cardCornerRadius="30dp"
+                app:cardBackgroundColor="#00000000"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_height="175dp">
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/img_cv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/tv_gameA"
+                        android:fontFamily="@font/hind"
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:text="@string/txt_card_game"
+                        android:textColor="#FFF5F1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cv2"
+                style="@style/Widget.Material3.CardView.Filled"
+                app:strokeColor="#D29F69"
+                app:strokeWidth="1dp"
+                android:layout_width="155dp"
+                app:cardCornerRadius="30dp"
+                app:cardBackgroundColor="#00000000"
+                android:layout_marginEnd="10dp"
+                android:layout_height="175dp">
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/img_cv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/tv_gameB"
+                        android:fontFamily="@font/hind"
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:text="@string/txt_card_game2"
+                        android:textColor="#FFF5F1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cv3"
+                style="@style/Widget.Material3.CardView.Filled"
+                app:strokeColor="#D29F69"
+                app:strokeWidth="1dp"
+                android:layout_width="155dp"
+                app:cardCornerRadius="30dp"
+                app:cardBackgroundColor="#00000000"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_height="175dp">
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/img_cv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/tv_gameC"
+                        android:fontFamily="@font/hind"
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:text="@string/txt_card_game3"
+                        android:textColor="#FFF5F1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cv4"
+                style="@style/Widget.Material3.CardView.Filled"
+                app:strokeColor="#D29F69"
+                app:strokeWidth="1dp"
+                android:layout_width="155dp"
+                app:cardCornerRadius="30dp"
+                app:cardBackgroundColor="#00000000"
+                android:layout_marginEnd="10dp"
+                android:layout_height="175dp">
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/img_cv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/tv_gameD"
+                        android:fontFamily="@font/hind"
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:text="@string/txt_card_game4"
+                        android:textColor="#FFF5F1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:visibility="gone"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/btn_benar"
+        android:layout_marginTop="620dp"
+        app:cornerRadius="8dp"
+        android:text="@string/luarbiasa"
+        android:fontFamily="@font/khula_bold"
+        android:textSize="16sp"
+        android:letterSpacing="0"
+        android:textColor="@color/secondary_dark"
+        android:backgroundTint="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/btn_periksa"
+        android:layout_marginTop="670dp"
+        app:cornerRadius="8dp"
+        android:text="@string/periksa"
+        android:fontFamily="@font/khula_bold"
+        android:textSize="16sp"
+        android:letterSpacing="0"
+        android:textColor="@color/secondary_dark"
+        android:backgroundTint="#6DFF85"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"/>
+
+    <Button
+        android:visibility="gone"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/btn_lanjut"
+        android:layout_marginTop="670dp"
+        app:cornerRadius="8dp"
+        android:text="@string/lanjut"
+        android:fontFamily="@font/khula_bold"
+        android:textSize="16sp"
+        android:letterSpacing="0"
+        android:textColor="@color/secondary_dark"
+        android:backgroundTint="#6DFF85"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"/>
+
+</FrameLayout>

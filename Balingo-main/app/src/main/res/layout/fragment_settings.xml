@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background"
+    tools:context=".ui.setting.SettingsFragment"
+    tools:ignore="ContentDescription">
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            app:srcCompat="@drawable/bale_halo" />
+
+        <com.google.android.material.card.MaterialCardView
+            app:strokeColor="#D29F69"
+            app:strokeWidth="1dp"
+            android:layout_width="match_parent"
+            app:cardCornerRadius="15dp"
+            app:cardBackgroundColor="@color/main_dark"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_height="550dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/profile"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="@string/profil"
+                    android:textColor="@color/main_dark"
+                    android:fontFamily="@font/khula_bold"
+                    android:textSize="16sp"
+                    app:cornerRadius="15dp"
+                    android:letterSpacing="0"
+                    android:backgroundTint="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:id="@+id/kontrol"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="@string/kontrol"
+                    android:textColor="@color/main_dark"
+                    android:fontFamily="@font/khula_bold"
+                    android:textSize="16sp"
+                    app:cornerRadius="15dp"
+                    android:letterSpacing="0"
+                    android:backgroundTint="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:id="@+id/syarat"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="@string/syarat"
+                    android:textColor="@color/main_dark"
+                    android:fontFamily="@font/khula_bold"
+                    android:textSize="16sp"
+                    app:cornerRadius="15dp"
+                    android:letterSpacing="0"
+                    android:backgroundTint="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:id="@+id/aboutus"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="@string/tentang"
+                    android:textColor="@color/main_dark"
+                    android:fontFamily="@font/khula_bold"
+                    android:textSize="16sp"
+                    app:cornerRadius="15dp"
+                    android:letterSpacing="0"
+                    android:backgroundTint="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:id="@+id/back"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="50dp"
+                    android:text="@string/back"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/khula_bold"
+                    android:textSize="16sp"
+                    app:cornerRadius="15dp"
+                    android:letterSpacing="0"
+                    android:backgroundTint="@color/secondary_light"
+                    android:layout_width="200dp"
+                    android:layout_height="70dp"/>
+            </LinearLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+
+
+</FrameLayout>

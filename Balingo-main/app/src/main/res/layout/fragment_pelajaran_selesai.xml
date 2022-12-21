@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background"
+    tools:context=".ui.PelajaranSelesaiFragment"
+    tools:ignore="ContentDescription">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:letterSpacing="0.05"
+            android:text="@string/pelajaran"
+            android:fontFamily="@font/kodchasan_bold"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="130dp"
+            app:srcCompat="@drawable/logo" />
+
+        <LinearLayout
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cv1"
+                style="@style/Widget.Material3.CardView.Filled"
+                android:layout_width="wrap_content"
+                app:cardCornerRadius="12dp"
+                app:cardBackgroundColor="@color/secondary_dark"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/volt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:text="@string/xp"
+                            android:textSize="15sp"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/hind_semibold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        app:rippleColor="@color/white"
+                        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/hind_bold"
+                        android:letterSpacing="0"
+                        android:text="@string/nilaixp"
+                        android:textAlignment="center"
+                        android:textColor="#FFF5F1"
+                        android:textSize="15sp"
+                        android:backgroundTint="@color/secondary_light"
+                        app:cornerRadius="15dp"/>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cv2"
+                style="@style/Widget.Material3.CardView.Filled"
+                android:layout_width="wrap_content"
+                app:cardCornerRadius="12dp"
+                app:cardBackgroundColor="@color/whites_normal"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:src="@drawable/time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:text="@string/waktu"
+                            android:textSize="15sp"
+                            android:textAllCaps="true"
+                            android:layout_marginStart="5dp"
+                            android:fontFamily="@font/hind_bold"
+                            android:textColor="@color/secondary_dark"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        app:rippleColor="@color/white"
+                        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/hind_semibold"
+                        android:letterSpacing="0"
+                        android:text="@string/txtwaktu"
+                        android:textAlignment="center"
+                        android:textColor="#FFF5F1"
+                        android:textSize="15sp"
+                        android:backgroundTint="@color/secondary_light"
+                        app:cornerRadius="15dp"/>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cv3"
+                style="@style/Widget.Material3.CardView.Filled"
+                android:layout_width="wrap_content"
+                app:cardCornerRadius="12dp"
+                app:cardBackgroundColor="@color/secondary_dark"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:src="@drawable/accuracy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:fontFamily="@font/hind_semibold"
+                            android:text="@string/akurasi"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        app:rippleColor="@color/white"
+                        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/hind_bold"
+                        android:letterSpacing="0"
+                        android:text="@string/txtakurasi"
+                        android:textAlignment="center"
+                        android:textColor="#FFF5F1"
+                        android:textSize="15sp"
+                        android:backgroundTint="@color/secondary_light"
+                        app:cornerRadius="15dp"/>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/btn_next"
+            android:layout_marginTop="130dp"
+            app:cornerRadius="8dp"
+            android:text="@string/menujupeta"
+            android:fontFamily="@font/khula_bold"
+            android:textSize="16sp"
+            android:letterSpacing="0"
+            android:textColor="@color/secondary_dark"
+            android:backgroundTint="#6DFF85"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"/>
+
+
+
+    </LinearLayout>
+
+
+
+</FrameLayout>
